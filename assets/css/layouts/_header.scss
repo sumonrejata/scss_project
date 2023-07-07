@@ -1,0 +1,43 @@
+.header-area {
+    padding: 20px;
+    position: relative;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    .logo {
+        width: 290px;
+        float: left;
+        a {
+            font-size: 35px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: .3s;
+            &:hover {
+                color: tomato;
+              }
+          }
+      }
+      .menu {
+        float: right;
+        width: 900px;
+        ul{
+            text-align: right;
+            li{
+                display: inline-block;
+                a{
+                    margin-right: 19px;
+                    font-size: 21px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    transition: .3s;
+                    &:hover{
+                        color: tomato;
+                    }
+                }
+            }
+        }
+      }
+  }
+

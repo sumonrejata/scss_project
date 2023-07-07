@@ -1,0 +1,25 @@
+
+.cat-area {
+  color: #fff;
+  h4 {
+    font-size: 59px;
+    text-transform: capitalize;
+    margin-bottom: 51px;
+  }
+  p {
+    max-width: 600px;
+    margin: 10px auto;
+    margin-top: 10px;
+  }
+  a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    background-color: tomato;
+    padding: 7px 34px;
+    border-radius: 26px;
+    &:hover {
+        background-color: #c0392b;
+      }
+  }
+}

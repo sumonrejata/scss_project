@@ -1,0 +1,58 @@
+.blog_title h4 {
+    font-size: 44px;
+    text-transform: capitalize;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      background-color: tomato;
+      width: 81px;
+      height: 6px;
+      transform: translateX(-50%);
+      bottom: -17px;
+    }
+    
+  }
+  .blog_title p {
+    max-width: 600px;
+    margin: 39px auto;
+  }
+
+.single_blog {
+  float: left;
+  width: 380px;
+  margin-right: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  overflow: hidden;
+
+  .blog_img {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    transition: .3s;
+    overflow: hidden;
+  }
+  h4 {
+    font-size: 23px;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+  }
+  .blog_content {
+    padding: 13px;
+    a {
+      font-size: 18px;
+      text-transform: capitalize;
+      background-color: tomato;
+      padding: 7px 13px;
+      border-radius: 30px;
+      color: #fff;
+    }
+    p {
+      margin-bottom: 29px;
+    }
+  }
+}
+
+

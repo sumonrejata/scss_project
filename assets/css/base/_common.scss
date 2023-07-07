@@ -1,0 +1,89 @@
+@import 'color';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fix::before, .fix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+
+/* Margin & Padding */
+
+@for $i from 1 through 10{
+    .pt-#{$i * 10}{
+        padding-top: $i * 10px;
+    }
+    .pb-#{$i * 10}{
+        padding-bottom: $i * 10px;
+    }
+    .mt-#{$i * 10}{
+        margin-top: $i * 10px;
+    }
+    .mb-#{$i * 10}{
+        margin-bottom: $i * 10px;
+    }
+}
+
+/* Text aling */
+
+$list: left,center,right,justify;
+@each $i in $list{
+    .text-#{$i}{
+        text-align: $i;
+    }
+}
+
+
+/* banner */
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: $black;
+        opacity: .75;
+    }
+}
+
+/* Button common css */
+
+
+
+
+
+
+
+
+
+
+
+

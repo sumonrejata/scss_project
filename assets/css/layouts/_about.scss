@@ -1,0 +1,57 @@
+
+.about_title h4 {
+  font-size: 44px;
+  text-transform: capitalize;
+  margin-bottom: 28px;
+  position: relative;
+  padding-bottom: 19px;
+  &::before {
+	content: "";
+	position: absolute;
+	background-color: tomato;
+	width: 81px;
+	height: 5px;
+	bottom: 0;
+	transform: translateX(-50%);
+	left: 50%;
+}
+}
+.about_title p {
+  max-width: 678px;
+  margin: 24px auto;
+}
+
+/* Single about */
+.single_about {
+    float: left;
+    width: 375px;
+    margin-right: 25px;
+    border: 1px solid #ddd;
+    padding: 34px 10px;
+    &:last-child {
+        margin-right: 0;
+      }
+      h4 {
+        font-size: 26px;
+        text-transform: capitalize;
+      }
+      p {
+        margin: 18px auto;
+    }
+    .btn_single {
+        color: black;
+        font-size: 18px;
+        text-transform: capitalize;
+        padding: 5px 12px;
+        border-radius: 23px;
+        border: 2px solid tomato;
+        &:hover {
+            border: 1px solid black;
+          }
+    }
+  }
+
+
+
+
+
